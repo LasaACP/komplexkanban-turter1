@@ -1,6 +1,6 @@
 /*
-
-  Compile with: g++ main.cpp ../src/fac.cpp catch_amalgamated
+  only run this if you are in the tests folder, i.e. do cd tests in shell
+  Compile with: g++ main.cpp ../src/fac.cpp catch_amalgamated.cpp
   Runn with ./a.out
 
 */
