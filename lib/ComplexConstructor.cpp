@@ -27,3 +27,9 @@ Complex::Complex(double r, double i = 0.) {
 }
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -
+
+
+ostream& operator<<(ostream& in, Complex& toPrint) {
+  in << toPrint.r << " + " << toPrint.i << "i";
+  return in;
+}
