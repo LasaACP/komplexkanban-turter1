@@ -26,8 +26,6 @@ class Complex {
     Complex();
     Complex(double r, double i);
 
-    Complex operator += (float rhs);
-
     /**
      * Returns the real part of comlpex number
      * @param com The complex number to find the real part of
