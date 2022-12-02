@@ -20,13 +20,11 @@ using namespace std;
 class Complex {
 
     //----------------------------------------- OPERATOR OVERLOADS -----------------------------------------------------
-    public: double r;
+    double r;
     double i;
 
     Complex();
     Complex(double r, double i);
-
-    Complex operator += (float rhs);
 
     /**
      * Returns the real part of comlpex number
@@ -57,9 +55,10 @@ class Complex {
      */
     friend double abs(Complex);
   
-
-
-    //overloading insertion
-    friend ostream& operator<< (ostream& in, Complex& toprint);
+  
+  
+  
+  
+  
 }; // Complex class declaration
 #endif
