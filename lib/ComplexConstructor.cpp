@@ -17,7 +17,13 @@ Modified : Dec. 11th
 
 Complex::Complex() 
 {
-  // Constructor code
+  r = 0.;
+  i = 0.;
+}
+
+Complex::Complex(double r, double i = 0.) {
+  this->r = r;
+  this->i = i;
 }
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -

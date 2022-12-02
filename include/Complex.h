@@ -20,6 +20,11 @@ using namespace std;
 class Complex {
 
     //----------------------------------------- OPERATOR OVERLOADS -----------------------------------------------------
+    double r;
+    double i;
+
+    Complex();
+    Complex(double r, double i);
 
     /**
      * Returns the real part of comlpex number
@@ -55,4 +60,5 @@ class Complex {
   
   
   
-} // Complex class declaration
+}; // Complex class declaration
+#endif
