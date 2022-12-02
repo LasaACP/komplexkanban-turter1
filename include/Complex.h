@@ -57,7 +57,7 @@ class Complex {
      */
     friend double abs(Complex);
   
-
+    Complex operator+(Complex lhs, Complex rhs);
 
     //overloading insertion
     friend ostream& operator<< (ostream& in, Complex& toprint);
