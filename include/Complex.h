@@ -28,6 +28,10 @@ class Complex {
 
     Complex operator += (float rhs);
 
+    Complex operator /= (float div);
+    Complex operator /= (Complex div);
+
+
     /**
      * Returns the real part of comlpex number
      * @param com The complex number to find the real part of
@@ -44,7 +48,7 @@ class Complex {
       friend double imag(Complex);
   
   
-  
+      
   
   
       //------------------------------------- ARITHMETIC LIBRARY FUNCTIONS -------------------------------------------
@@ -56,10 +60,21 @@ class Complex {
      * @author ____________
      */
     friend double abs(Complex);
+
+    /*
+    * returns the complex conjugate (a - bi) of com
+    */
+    friend Complex conj(Complex);
+    /*
+    * returns the norm (a^2 + b^2) of com
+    */
+    friend double norm(Complex);
   
 
 
     //overloading insertion
     friend ostream& operator<< (ostream& in, Complex& toprint);
+
+  
 }; // Complex class declaration
 #endif

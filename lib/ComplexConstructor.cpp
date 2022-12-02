@@ -33,3 +33,11 @@ ostream& operator<<(ostream& in, Complex& toPrint) {
   in << toPrint.r << " + " << toPrint.i << "i";
   return in;
 }
+
+Complex Complex::conj(Complex& in) {
+  return new Complex(in.r, -in.i);
+}
+
+double Complex::norm(Complex& in) {
+  return in.r * in.r + in.i * in.i;
+}
