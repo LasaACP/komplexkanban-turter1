@@ -11,7 +11,7 @@ int main () {
 
     std::cout << "Factorial test " << Factorial(5) << std::endl;
   
-    /*Complex a(5.0,6.0),b;
+    Complex a(5.0,6.0),b;
 
     std::cout << "Enter b: ";
     std::cin >> b;

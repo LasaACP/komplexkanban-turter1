@@ -20,7 +20,7 @@ using namespace std;
 class Complex {
 
     //----------------------------------------- OPERATOR OVERLOADS -----------------------------------------------------
-    double r;
+    public: double r;
     double i;
 
     Complex();
@@ -55,10 +55,9 @@ class Complex {
      */
     friend double abs(Complex);
   
-  
-  
-  
-  
-  
+
+
+    //overloading insertion
+    friend ostream& operator<< (ostream& in, Complex& toprint);
 }; // Complex class declaration
 #endif
