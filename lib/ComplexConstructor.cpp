@@ -17,7 +17,8 @@ Modified : Dec. 11th
 
 Complex::Complex() 
 {
-  // Constructor code
+  double real;
+  double imaginary;
 }
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -
