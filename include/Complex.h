@@ -26,6 +26,8 @@ class Complex {
     Complex();
     Complex(double r, double i);
 
+    bool operator == (Complex other);
+
     Complex operator += (float rhs);
 
     Complex operator /= (float div);
@@ -59,21 +61,28 @@ class Complex {
      * @return the absolute value of com
      * @author ____________
      */
-    friend double abs(Complex);
+    friend double abs(Complex com);
 
     /*
     * returns the complex conjugate (a - bi) of com
+    * @param com the complex number to find the conjugate of
+    * @return the conjugate of com
+    * @author Addy
     */
-    friend Complex conj(Complex);
+public:
+      static Complex conj(Complex com);
     /*
     * returns the norm (a^2 + b^2) of com
+    * @param com the complex number to find the norm of
+    * @return the norm of com
+    * @author Addy
     */
-    friend double norm(Complex);
+      static double norm(Complex com);
   
 
 
     //overloading insertion
-    friend ostream& operator<< (ostream& in, Complex& toprint);
+    friend ostream& operator<< (ostream& in, Complex toprint);
 
   
 }; // Complex class declaration

@@ -28,7 +28,7 @@ int main( int argc, char* argv[] ) {
 
 #else    //Not CATCH_AMALGAMATED_CUSTOM_MAIN
 
-TEST_CASE("Quick Catch2 test on Addition", "[Addition]")
+/*TEST_CASE("Quick Catch2 test on Addition", "[Addition]")
 {
 
   cout << "Hello Catch2 Build with Catch2 main()\n";

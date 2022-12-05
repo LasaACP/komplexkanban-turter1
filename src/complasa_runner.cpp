@@ -6,6 +6,12 @@
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
+
+/*
+run with: g++ complasa_runner.cpp ../lib/assignmentOperators/ComplexDivisionAssignment.cpp ../lib/ComplexConstructor.cpp fac.cpp
+
+*/
+
 int main () {
     std::cout << "Hello World" << std::endl;
 
@@ -13,7 +19,17 @@ int main () {
   
     Complex a(5.0,6.0),b;
 
-    std::cout << "Enter b: ";
+    b =  Complex(1., 2.);
+
+    a /= 2.;
+
+    cout << a << endl;
+
+    bool check = Complex::conj(a) == Complex(2.5, -3.);
+
+    cout << check << endl;
+
+    /*std::cout << "Enter b: ";
     std::cin >> b;
 
     std::cout << "a = " << a << "\n";
