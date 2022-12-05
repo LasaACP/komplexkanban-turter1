@@ -15,10 +15,10 @@ using namespace std;
 
 Complex Complex :: operator *(Complex rhs))
 {
-  double tempReal = ((real * rhs.real()) + (imaginary * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
-  double tempImaginary = ((imaginary * rhs.real()) - (real * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
-  Complex quotientComplex = Complex(tempReal, tempImaginary);
-  return quotientComplex;
+  double temp_real = ((real * rhs.real()) + (imaginary * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
+  double temp_imaginary = ((imaginary * rhs.real()) - (real * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
+  Complex quotient_complex = Complex(temp_real, temp_imaginary);
+  return quotient_complex;
 }
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -
