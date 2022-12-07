@@ -21,6 +21,12 @@ int main () {
 
   a+=5;
   std::cout << "a += 5, a = " << a << '\n';
+  a+= Complex(2, 2);
+  std::cout << "a += 2 + 2i, a = " << a << '\n';
+  a-= Complex(2, 2);
+  std::cout << "a -= 2 + 2i, a = " << a << '\n';
+  a-=5;
+  std::cout << "a -= 5, a = " << a << '\n';
   //std::cout << "a + b = " << a + b << "\n";
   //std::cout << "a * b = " << a * b << "\n";
   //std::cout << "a / b = " << a / b << "\n";
