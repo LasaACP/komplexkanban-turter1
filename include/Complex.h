@@ -63,9 +63,9 @@ class Complex {
      * Returns the absolute value (sqrt(a^2+b^2)) of com
      * @param com the complex number to find the absolute value of
      * @return the absolute value of com
-     * @author ____________
+     * @author Jackson
      */
-    friend double abs(Complex);
+    friend double abs(Complex c);
 
     /*
     * returns the complex conjugate (a - bi) of com
