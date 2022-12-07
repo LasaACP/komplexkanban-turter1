@@ -15,12 +15,20 @@ Modified : Dec. 11th
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
+/*
+    * Complex class default constructor
+    * @author Addy
+    */
 Complex::Complex() 
 {
   r = 0.;
   i = 0.;
 }
 
+/*
+    * Complex class initializing constructor
+    * @author Addy
+    */
 Complex::Complex(double r, double i = 0.) {
   this->r = r;
   this->i = i;
@@ -28,7 +36,10 @@ Complex::Complex(double r, double i = 0.) {
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -
 
-
+/*
+    * operator to insert a complex number into an ostream
+    * @author Addy
+    */
 ostream& operator<<(ostream& in, Complex toPrint) {
   if (toPrint.i >= 0.) {
     in << toPrint.r << " + " << toPrint.i << "i";
@@ -38,10 +49,18 @@ ostream& operator<<(ostream& in, Complex toPrint) {
   return in;
 }
 
+/*
+    * operator to determine if a complex number is equal to another complex number
+    * @author Addy
+    */
 bool Complex::operator == (Complex other) {
   return this->r == other.r && this->i == other.i;
 }
 
+/*
+    * operator to determine if a complex number is equal to a double
+    * @author Addy
+    */
 bool Complex::operator == (double other) {
   return this->r == other && this->i == 0.;
 }
