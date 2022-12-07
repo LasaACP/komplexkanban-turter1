@@ -29,6 +29,10 @@ int main () {
 
     cout << check << endl;
 
+
+    cout << "Complex v double comparison" << endl;
+    cout << (Complex(5., 0.) == 5.) << endl;
+
     /*std::cout << "Enter b: ";
     std::cin >> b;
 

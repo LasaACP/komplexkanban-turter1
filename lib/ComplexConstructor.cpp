@@ -42,6 +42,10 @@ bool Complex::operator == (Complex other) {
   return this->r == other.r && this->i == other.i;
 }
 
+bool Complex::operator == (double other) {
+  return this->r == other && this->i == 0.;
+}
+
 /*
     * returns the conjugate (a - bi) of com
     * @param com the complex number to find the conjugate of

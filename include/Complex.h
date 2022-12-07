@@ -27,6 +27,7 @@ class Complex {
     Complex(double r, double i);
 
     bool operator == (Complex other);
+    bool operator == (double other);
 
     Complex operator += (float rhs);
 
