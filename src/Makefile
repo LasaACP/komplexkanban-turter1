@@ -16,5 +16,3 @@ main:
 
 clean:
 	rm -f main main-debug
-
-
