@@ -5,3 +5,10 @@ Complex Complex::operator += (float rhs){
   r += rhs;
   return(*this);
 }
+
+// The += function for two Complex numbers
+Complex Complex::operator += (float rhs){
+  r += rhs.r;
+  i += rhs.i;
+  return(*this);
+}
