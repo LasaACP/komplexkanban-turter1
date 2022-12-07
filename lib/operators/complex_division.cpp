@@ -14,8 +14,8 @@ Modified : Dec. 2nd
 using namespace std;
 
 Complex Complex::operator /(Complex rhs) {
-  double temp_real = ((r * rhs.real()) + (i * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary()));
-  double temp_imaginary = ((i * rhs.real()) - (r * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary()));
+  double temp_real = ((r * rhs.r) + (i * rhs.i)) / ((rhs.r * rhs.r) + (rhs.i * rhs.i));
+  double temp_imaginary = ((i * rhs.r) - (r * rhs.i)) / ((rhs.r * rhs.r) + (rhs.i * rhs.i));
   Complex quotient_complex = Complex(temp_real, temp_imaginary);
   return quotient_complex;
 }

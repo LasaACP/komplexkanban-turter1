@@ -15,8 +15,8 @@ using namespace std;
 
 Complex Complex::operator *(Complex rhs)
 {
-  double temp_real = (r * rhs.real()) - (i * rhs.imaginary());
-  double temp_imaginary = (r * rhs.imaginary()) + (rhs.real() * i);
+  double temp_real = (r * rhs.r) - (i * rhs.i);
+  double temp_imaginary = (r * rhs.i) + (rhs.r * i);
   Complex product_complex = Complex(temp_real, temp_imaginary);
   return product_complex;
 }
