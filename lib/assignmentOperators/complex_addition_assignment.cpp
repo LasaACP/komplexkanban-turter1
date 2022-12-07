@@ -7,7 +7,7 @@ Complex Complex::operator += (float rhs){
 }
 
 // The += function for two Complex numbers
-Complex Complex::operator += (float rhs){
+Complex Complex::operator += (Complex rhs){
   r += rhs.r;
   i += rhs.i;
   return(*this);
