@@ -32,6 +32,8 @@ class Complex {
     Complex operator /= (Complex div);
     Complex operator * (Complex div);
     Complex operator / (Complex div);
+    Complex operator - (Complex div);
+    Complex operator + (Complex div);
 
     /**
      * Returns the real part of comlpex number
