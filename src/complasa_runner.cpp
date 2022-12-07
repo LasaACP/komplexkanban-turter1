@@ -19,20 +19,6 @@ int main () {
   
     Complex a(5.0,6.0),b;
 
-    b =  Complex(1., 2.);
-
-    a /= 2.;
-
-    cout << a << endl;
-
-    bool check = Complex::conj(a) == Complex(2.5, -3.);
-
-    cout << check << endl;
-
-
-    cout << "Complex v double comparison" << endl;
-    cout << (Complex(5., 0.) == 5.) << endl;
-
     /*std::cout << "Enter b: ";
     std::cin >> b;
 
