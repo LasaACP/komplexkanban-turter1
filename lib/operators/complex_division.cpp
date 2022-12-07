@@ -10,13 +10,12 @@ Modified : Dec. 2nd
 */
 
 #include <cmath>
-#include "../include/Complex.h"
+#include "../../include/Complex.h"
 using namespace std;
 
-Complex Complex :: operator *(Complex rhs))
-{
-  double temp_real = ((real * rhs.real()) + (imaginary * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
-  double temp_imaginary = ((imaginary * rhs.real()) - (real * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary());
+Complex Complex::operator /(Complex rhs) {
+  double temp_real = ((r * rhs.real()) + (i * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary()));
+  double temp_imaginary = ((i * rhs.real()) - (r * rhs.imaginary())) / ((rhs.real() * rhs.real()) + (rhs.imaginary() * rhs.imaginary()));
   Complex quotient_complex = Complex(temp_real, temp_imaginary);
   return quotient_complex;
 }

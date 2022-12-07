@@ -10,13 +10,13 @@ Modified : Dec. 11th
 */
 
 #include <cmath>
-#include "../include/Complex.h"
+#include "../../include/Complex.h"
 using namespace std;
 
-Complex Complex :: operator *(Complex rhs))
+Complex Complex::operator *(Complex rhs)
 {
-  double temp_real = (real * rhs.real()) - (imaginary * rhs.imaginary());
-  double temp_imaginary = (real * rhs.imaginary()) + (rhs.real() * imaginary);
+  double temp_real = (r * rhs.real()) - (i * rhs.imaginary());
+  double temp_imaginary = (r * rhs.imaginary()) + (rhs.real() * i);
   Complex product_complex = Complex(temp_real, temp_imaginary);
   return product_complex;
 }
