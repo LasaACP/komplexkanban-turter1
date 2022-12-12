@@ -43,16 +43,16 @@ class Complex {
 
     /**
      * Returns the real part of comlpex number
-     * @param com The complex number to find the real part of
+     * @param com The complex function to find the real part of
      * @return complex.real
-     * @author ___________
+     * @author Jackson Edwards
      */
     friend double real(Complex);
     /**
      * Returns the imaginary part of complex number
-     * @param com The complex number to find the real part of
+     * @param com The complex function to find the real part of
      * @return complex.imaginary
-     * @author _________
+     * @author Jackson Edwards
      */
       friend double imag(Complex);
   
