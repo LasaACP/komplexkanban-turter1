@@ -66,6 +66,13 @@ class Complex {
      * @author Jackson
      */
     friend double abs(Complex c);
+    /**
+     * Returns the angle arctan(b/a) of com
+     * @param com the complex number to find the angle of
+     * @return the angle of com
+     * @author Jackson
+     */
+    friend double arg(Complex c);
 
     /*
     * returns the complex conjugate (a - bi) of com
