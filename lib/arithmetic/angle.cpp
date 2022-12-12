@@ -13,5 +13,5 @@ Modified : Dec. 12th
 
 // The magnitude function for a Complex number
 double arg(Complex c){
-  return(arctan(c.i/c.r));
+  return(atan(c.i/c.r));
 }
