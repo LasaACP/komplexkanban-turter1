@@ -55,7 +55,7 @@ ostream& operator<<(ostream& in, Complex toPrint) {
     * operator to determine if a complex number is equal to another complex number
     * @author Addy
     */
-bool Complex::operator == (Complex other) {
+bool Complex::operator == (Complex other) const {
   return this->r == other.r && this->i == other.i;
 }
 
@@ -63,7 +63,7 @@ bool Complex::operator == (Complex other) {
     * operator to determine if a complex number is equal to a double
     * @author Addy
     */
-bool Complex::operator == (double other) {
+bool Complex::operator == (double other) const {
   return this->r == other && this->i == 0.;
 }
 

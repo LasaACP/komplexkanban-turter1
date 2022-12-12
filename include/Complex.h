@@ -29,8 +29,8 @@ class Complex {
     Complex operator += (Complex rhs);
     Complex operator -= (float rhs);
     Complex operator -= (Complex rhs);
-    bool operator == (Complex other);
-    bool operator == (double other);
+    bool operator == (Complex other) const;
+    bool operator == (double other) const;
     Complex operator /= (float div);
     Complex operator /= (Complex div);
     Complex operator * (Complex div);
