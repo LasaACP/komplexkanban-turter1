@@ -25,10 +25,10 @@ class Complex {
 
     Complex();
     Complex(double r, double i);
-    Complex operator += (float rhs);
-    Complex operator += (Complex rhs);
-    Complex operator -= (float rhs);
-    Complex operator -= (Complex rhs);
+    void operator += (float rhs);
+    void operator += (Complex rhs);
+    void operator -= (float rhs);
+    void operator -= (Complex rhs);
     bool operator == (Complex other) const;
     bool operator == (double other) const;
     Complex operator /= (float div);
