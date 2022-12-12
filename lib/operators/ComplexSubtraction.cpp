@@ -14,10 +14,9 @@ Modified : Dec. 2nd
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
-Complex Complex::operator-(Complex lhs, Complex rhs)
+void Complex::operator-(Complex rhs)
 {
-  Complex* difference = new Complex();
-  sum->re = lhs.re - rhs.re;
-  sum->im = lhs.im - rhs.im;
-  return *difference;
+  re = re - rhs.re;
+  im = im - rhs.im;
+  
 }

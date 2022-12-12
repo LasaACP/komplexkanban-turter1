@@ -58,10 +58,10 @@ class Complex {
     friend double abs(Complex);
 
     //addition overloading
-    Complex operator+(Complex lhs, Complex rhs);
+    void operator+(Complex rhs);
 
     //subtraction overloading
-    Complex operator-(Complex lhs, Complex rhs)
+    void operator-(Complex rhs);
 
     //overloading insertion
     friend ostream& operator<< (ostream& in, Complex& toprint);

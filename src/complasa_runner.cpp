@@ -13,7 +13,7 @@ int main () {
   
     Complex a(5.0,6.0),b;
 
-    std::cout << "Enter b: ";
+    /*std::cout << "Enter b: ";
     std::cin >> b;
 
     std::cout << "a = " << a << "\n";
@@ -42,7 +42,7 @@ int main () {
     cout << "The sqrt is: " << sqrt(z1) << "\n";
     cout << "The natural log is: " << log(z1) << "\n";
     cout << "The sin is: " << sin(z1) << "\n";
-
+*/
     /* other function testing */
     /*
     cout << "\n------ OTHER FUNCTION TESTING ------\n\n";
