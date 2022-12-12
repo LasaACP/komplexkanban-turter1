@@ -37,6 +37,9 @@ class Complex {
     Complex operator / (Complex div);
     Complex operator - (Complex div);
     Complex operator + (Complex div);
+    void operator *= (Complex rhs);
+    void operator *= (float rhs);
+    Complex cos(Complex ang);
 
     /**
      * Returns the real part of comlpex number

@@ -14,10 +14,10 @@ Modified : Dec. 5th
 #define PI 3.1415926538979323846
 #define EULER 2.71828182845904523536
 
-Complex Complex::cos(Complex ang)
+Complex cos(Complex ang)
 {
-  double tempre = cos(ang.re)*cosh(ang.im);
-  double tempim = -1*sin(ang.re)*sinh(ang.im);
-  Complex numf = new Complex(tempre, tempim);
+  double temp_real = cos(ang.r)*cosh(ang.i);
+  double temp_imaginary = -1*sin(ang.r)*sinh(ang.i);
+  Complex numf = Complex(temp_real, temp_imaginary);
   return numf;
 }

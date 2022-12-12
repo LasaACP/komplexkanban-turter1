@@ -19,24 +19,24 @@ int main () {
   std::cout << "a = " << a << "\n";
   std::cout << "b = " << b << "\n";
 
-  a+=5;
-  std::cout << "a += 5, a = " << a << '\n';
-  a+= Complex(2, 2);
-  std::cout << "a += 2 + 2i, a = " << a << '\n';
-  a-= Complex(2, 2);
-  std::cout << "a -= 2 + 2i, a = " << a << '\n';
-  a-=5;
-  std::cout << "a -= 5, a = " << a << '\n';
+  // a+=5;
+  // std::cout << "a += 5, a = " << a << '\n';
+  // a+= Complex(2, 2);
+  // std::cout << "a += 2 + 2i, a = " << a << '\n';
+  // a-= Complex(2, 2);
+  // std::cout << "a -= 2 + 2i, a = " << a << '\n';
+  // a-=5;
+  // std::cout << "a -= 5, a = " << a << '\n';
   //std::cout << "a + b = " << a + b << "\n";
-  //std::cout << "a * b = " << a * b << "\n";
-  //std::cout << "a / b = " << a / b << "\n";
+  std::cout << "a * b = " << a * b << "\n";
+  std::cout << "a / b = " << a / b << "\n";
   //std::cout << "|a| = "   << abs(a) << "\n";
   //std::cout << "complex conjugate of a = " << conj(a) << "\n";
   //std::cout << "norm of a = " << norm(a) << "\n";
-  std::cout << "abs of b = " << abs(b) << "\n";
+  // std::cout << "abs of b = " << abs(b) << "\n";
   //std::cout << "exp(a) = " << exp(a) << "\n";
 
-  Complex j = Complex(0.0,1.0);
+  // Complex j = Complex(0.0,1.0);
   //Complex z1 = 1+2*j;
   //Complex z2 = 2+3*j;
 

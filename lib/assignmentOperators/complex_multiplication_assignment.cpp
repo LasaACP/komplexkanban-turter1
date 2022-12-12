@@ -16,8 +16,6 @@ Modified : Dec. 5th
 
 void Complex::operator*=(Complex rhs)
 {
-  double tempre = re;
-  double tempim = im;
-  re = tempre*rhs.re + tempim*rhs.im;
-  im = tempre*rhs.im + tempim*rhs.re;
+  r = r*rhs.r + i*rhs.i;
+  i = r*rhs.i + i*rhs.r;
 }
