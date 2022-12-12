@@ -25,10 +25,10 @@ class Complex {
 
     Complex();
     Complex(double r, double i);
-    Complex operator += (float rhs);
-    Complex operator += (Complex rhs);
-    Complex operator -= (float rhs);
-    Complex operator -= (Complex rhs);
+    void operator += (float rhs);
+    void operator += (Complex rhs);
+    void operator -= (float rhs);
+    void operator -= (Complex rhs);
     bool operator == (Complex other) const;
     bool operator == (double other) const;
     Complex operator /= (float div);
@@ -69,6 +69,13 @@ class Complex {
      * @author Jackson
      */
     friend double abs(Complex c);
+    /**
+     * Returns the angle arctan(b/a) of com
+     * @param com the complex number to find the angle of
+     * @return the angle of com
+     * @author Jackson
+     */
+    friend double arg(Complex c);
 
     /*
     * returns the complex conjugate (a - bi) of com
