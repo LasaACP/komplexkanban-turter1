@@ -87,7 +87,7 @@ bool Complex::operator == (double other) const {
     * @return the conjugate of com
     * @author Addy
     */
-Complex Complex::conj(Complex in) {
+Complex conj(Complex in) {
   return Complex(in.r, -in.i);
 }
 
@@ -97,7 +97,7 @@ Complex Complex::conj(Complex in) {
     * @return the norm of com
     * @author Addy
     */
-double Complex::norm(Complex in) {
+double norm(Complex in) {
   return in.r * in.r + in.i * in.i;
 }
 

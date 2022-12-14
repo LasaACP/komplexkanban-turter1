@@ -88,14 +88,14 @@ class Complex {
     * @author Addy
     */
 public:
-      static Complex conj(Complex com);
+      friend Complex conj(Complex com);
     /*
     * returns the norm (a^2 + b^2) of com
     * @param com the complex number to find the norm of
     * @return the norm of com
     * @author Addy
     */
-      static double norm(Complex com);
+      friend double norm(Complex com);
 
     /*
     * returns the natural logarithm of a complex number

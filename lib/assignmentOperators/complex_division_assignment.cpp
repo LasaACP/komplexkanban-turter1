@@ -15,8 +15,8 @@ Complex Complex::operator /= (float div){
     * @author Addy
     */
 Complex Complex::operator /= (Complex div) {
-  Complex num = *this * Complex::conj(div);
-  float n = Complex::norm(div);
+  Complex num = *this * conj(div);
+  float n = norm(div);
   r = num.r / n;
   i = num.i / n;
   return (*this);
