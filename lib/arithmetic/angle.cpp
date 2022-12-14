@@ -5,7 +5,7 @@ Author : J. Edwards
 URL : NA
 Description : The implementation of the angle function for Complex.h that was written by J. Edwards
 Created : Dec 12th
-Modified : Dec. 12th
+Modified : Dec. 14th
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 #include "../../include/Complex.h"
@@ -15,8 +15,14 @@ Modified : Dec. 12th
 double arg(Complex c){
   float ratio = c.i/c.r;
   float rads = atan(ratio);
-  if(rads < 0 && rads > 270){
-    rads += 1;
+  if(c.i > 0 && c.r < 0){
+    rads += M_PI;
+  }
+  else if(c.i < 0 && c.r < 0){
+    rads += M_PI;
+  }
+  else if(c.i < 0 && c.r > 0){
+    rads += 2*M_PI;
   }
   return(rads);
 }
