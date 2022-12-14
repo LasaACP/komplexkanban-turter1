@@ -31,6 +31,10 @@ class Complex {
     void operator -= (Complex rhs);
     bool operator == (Complex other) const;
     bool operator == (double other) const;
+    bool operator == (Complex other);
+    bool operator == (double other);
+    bool operator != (Complex other) const;
+    bool operator != (Complex other);
     Complex operator /= (float div);
     Complex operator /= (Complex div);
     Complex operator * (Complex div);
@@ -92,10 +96,24 @@ public:
     * @author Addy
     */
       static double norm(Complex com);
-  
+
+    /*
+    * returns the natural logarithm of a complex number
+    * @param com the complex number to find the natural logarithm of
+    * @return the natural logarithm of com
+    * @author Addy
+    */
+      friend Complex log(Complex com);
 
 
     //overloading insertion
     friend ostream& operator<< (ostream& in, Complex toprint);
 }; // Complex class declaration
+
+/*
+        *Creates a complex number from a magnitude and angle
+        *@author Addy
+      */
+Complex polar(double mag, double ang);
+
 #endif

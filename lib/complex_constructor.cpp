@@ -9,6 +9,8 @@ Modified : Dec. 11th
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
 
+//adds M_PI and M_E from CMATH
+#define _USE_MATH_DEFINES
 #include <cmath>
 #include "../include/Complex.h"
 
@@ -32,6 +34,18 @@ Complex::Complex()
 Complex::Complex(double r, double i = 0.) {
   this->r = r;
   this->i = i;
+}
+
+/*
+  *Creates a complex number from a magnitude and angle
+  *@author Addy
+*/
+Complex polar(double mag, double ang = 0.) {
+  Complex newComplex = Complex();
+  newComplex.r = cos(ang) * mag;
+  newComplex.i = sin(ang) * mag;
+  return newComplex;
+  
 }
 
 // - - - - - Other Functions Follow - - - - - - - - - - - -
@@ -85,4 +99,23 @@ Complex Complex::conj(Complex in) {
     */
 double Complex::norm(Complex in) {
   return in.r * in.r + in.i * in.i;
+}
+
+/*
+    * returns the natural logarithm of a complex number
+    * @param com the complex number to find the natural logarithm of
+    * @return the natural logarithm of com
+    * @author Addy
+    */
+Complex log(Complex in) {
+  double r = log(abs(in));
+
+  double i = atan(in.i / in.r);
+
+  //upper left quadrant
+  if (in.r < 0.) {
+    i += M_PI;
+  }
+
+  return Complex(r, i);
 }
