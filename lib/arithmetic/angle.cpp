@@ -11,7 +11,7 @@ Modified : Dec. 12th
 #include "../../include/Complex.h"
 #include "math.h"
 
-// The magnitude function for a Complex number
+// The function to get the angle of a Complex number
 double arg(Complex c){
   return(atan(c.i/c.r));
 }
