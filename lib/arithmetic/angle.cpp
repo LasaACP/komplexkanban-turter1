@@ -13,5 +13,10 @@ Modified : Dec. 12th
 
 // The function to get the angle of a Complex number
 double arg(Complex c){
-  return(atan(c.i/c.r));
+  float ratio = c.i/c.r;
+  float rads = atan(ratio);
+  if(rads < 0 && rads > 270){
+    rads += 1;
+  }
+  return(rads);
 }

@@ -11,7 +11,7 @@ int main () {
 
   //std::cout << "Factorial test " << Factorial(5) << std::endl;
 
-  Complex a(5.0,6.0),b(-4.0, -3.0);
+  Complex a(5.0,6.0),b(-3.0, 4.0);
 
   //std::cout << "Enter b: ";
   //std::cin >> b;
@@ -28,8 +28,8 @@ int main () {
   // a-=5;
   // std::cout << "a -= 5, a = " << a << '\n';
   //std::cout << "a + b = " << a + b << "\n";
-  std::cout << "a * b = " << a * b << "\n";
-  std::cout << "a / b = " << a / b << "\n";
+  //std::cout << "a * b = " << a * b << "\n";
+  //std::cout << "a / b = " << a / b << "\n";
   //std::cout << "|a| = "   << abs(a) << "\n";
   //std::cout << "complex conjugate of a = " << conj(a) << "\n";
   //std::cout << "norm of a = " << norm(a) << "\n";
@@ -45,7 +45,7 @@ int main () {
   //cout << "Complex number example: " << z1 << "\n";
   //cout << "The conjugate is: " << conj(z1) << "\n";
   //cout << "The magnitude is: " << abs(z1) << "\n";
-  //cout << "The phase in Radians is: " << arg(z1) << "\n";
+  cout << "The phase in Radians is: " << arg(b) << "\n";
   //cout << "The norm is: " << norm(z1) << "\n";
   //cout << "The sqrt is: " << sqrt(z1) << "\n";
   //cout << "The natural log is: " << log(z1) << "\n";
