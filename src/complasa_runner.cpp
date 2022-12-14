@@ -18,6 +18,7 @@ int main () {
 
   std::cout << "a = " << a << "\n";
   std::cout << "b = " << b << "\n";
+  cout << "sin: " << sin(a) << "\n";
 
   a+=5;
   std::cout << "a += 5, a = " << a << '\n';

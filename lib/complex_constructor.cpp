@@ -63,7 +63,18 @@ ostream& operator<<(ostream& in, Complex toPrint) {
   }
   return in;
 }
+/*
+  *operator to extract a complex number from an istream
+  *@author Joseph
+  */
 
+istream& operator>>(istream& exi, Complex exc){
+  cout << "real number: ";
+  exi >> exc.r;
+  cout << "imaginary number: ";
+  exi >> exc.i;
+  return exi;
+}
 
 /*
     * operator to determine if a complex number is equal to another complex number
