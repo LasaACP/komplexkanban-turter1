@@ -61,5 +61,19 @@ TEST_CASE("Addy's Catch2 tests", "[ComplexFactorial]")
   REQUIRE(log(Complex(1.2, -2.2)) == Complex(0.9186849902, -1.0714496051));
   
 }
+
+TEST_CASE("Tate's Catch2 tests", "[ComplexMultiplicationDivision]"){
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Tate's functions" << endl;
+  //Multiplication
+  REQUIRE((Complex(1., 1.) * Complex(1., 1.)) == Complex(2., 0.));
+  REQUIRE((Complex(5., -3.) * Complex(1., 2.)) == Complex(11., 7.));
+  REQUIRE((Complex(8., -1.) * Complex(4., -4.)) == Complex(28., -36.));
+  //Division
+  REQUIRE((Complex(1., 1.) / Complex(1., 1.)) == Complex(1., 0.));
+  REQUIRE((Complex(5., -3.) / Complex(1., 2.)) == Complex(11., 7.));
+  REQUIRE((Complex(8., -1.) / Complex(4., -4.)) == Complex((9.0/8.0), (7.0/8.0)));
+}
+
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN

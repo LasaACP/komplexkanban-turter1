@@ -37,7 +37,7 @@ int main () {
   std::cout << "abs of b = " << abs(b) << "\n";
   //std::cout << "exp(a) = " << exp(a) << "\n";
 
-  Complex j = Complex(0.0,1.0);
+  Complex j = Complex(3.0,1.0);
   Complex z1 = j;//1.+2.*j;
   Complex z2 = j;//2.+3.*j;
 
@@ -48,7 +48,7 @@ int main () {
   cout << "The magnitude is: " << abs(z1) << "\n";
   cout << "The phase in Radians is: " << arg(z1) << "\n";
   cout << "The norm is: " << norm(z1) << "\n";
-  //cout << "The sqrt is: " << sqrt(z1) << "\n";
+  cout << "The sqrt is: " << sqrt(z1) << "\n";
   cout << "The natural log is: " << log(z1) << "\n";
   //cout << "The sin is: " << sin(z1) << "\n";
 

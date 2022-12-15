@@ -44,6 +44,7 @@ class Complex {
     void operator *= (Complex rhs);
     void operator *= (float rhs);
     friend Complex cos(Complex ang);
+    friend Complex sin(Complex num);
 
     /**
      * Returns the real part of comlpex number
@@ -105,15 +106,23 @@ public:
     */
       friend Complex log(Complex com);
 
+    /*
+    * returns the square root of a complex number
+    * @param num the complex number to find the square root of
+    * @return the square root of num
+    * @author Tate Smith
+    */
+      friend Complex sqrt(Complex num);
+
 
     //overloading insertion
     friend ostream& operator<< (ostream& in, Complex toprint);
-}; // Complex class declaration
+}; 
 
-/*
-        *Creates a complex number from a magnitude and angle
-        *@author Addy
-      */
-Complex polar(double mag, double ang);
+    /*
+    *Creates a complex number from a magnitude and angle
+    *@author Addy
+    */
+      Complex polar(double mag, double ang);
 
 #endif
