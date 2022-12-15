@@ -44,7 +44,7 @@ TEST_CASE("Quick Catch2 test on Factorial", "[Factorial]")
 TEST_CASE("Addy's Catch2 tests", "[ComplexFactorial]")
 {
   cout << "Hello Catch2 Build with Catch2 main()\n";
-  cout << "Running tests on Addy's function" << endl;
+  cout << "Running tests on Addy's functions" << endl;
   //Conjugate
   REQUIRE(conj(Complex(1., 1.)) == Complex(1., -1.));
   REQUIRE(conj(Complex(1., 0.)) == Complex(1., 0.));
@@ -73,6 +73,25 @@ TEST_CASE("Tate's Catch2 tests", "[ComplexMultiplicationDivision]"){
   REQUIRE((Complex(1., 1.) / Complex(1., 1.)) == Complex(1., 0.));
   REQUIRE((Complex(5., -3.) / Complex(1., 2.)) == Complex(11., 7.));
   REQUIRE((Complex(8., -1.) / Complex(4., -4.)) == Complex((9.0/8.0), (7.0/8.0)));
+}
+
+TEST_CASE("Jackson's Catch2 tests"){
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on Jackson's functions" << endl;
+  Complex a(5.0,6.0),b(3.0, 4.0);
+  
+  a+=5;
+  REQUIRE(a == Complex(10.0, 6.0));
+  a+=Complex(1.0, 1.0);
+  REQUIRE(a == Complex(11.0, 7.0));
+  a-=Complex(1.0, 1.0);
+  REQUIRE(a == Complex(10.0, 6.0));
+  a-=5;
+  REQUIRE(a == Complex(5.0, 6.0));
+
+  REQUIRE(abs(a) == sqrt(61));
+
+  REQUIRE(arg(b) == atan(4.0/3.0));
 }
 
 // */
