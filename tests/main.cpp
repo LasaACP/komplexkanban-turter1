@@ -94,5 +94,34 @@ TEST_CASE("Jackson's Catch2 tests"){
   REQUIRE(arg(b) == atan(4.0/3.0));
 }
 
+TEST_CASE("Tate's Catch2 tests", "[ComplexAddition]"){
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on addition" << endl;
+  //Addition
+  REQUIRE((Complex(1., 1.) + Complex(1., 1.)) == Complex(2., 2.));
+  REQUIRE((Complex(5., -3.) + Complex(1., 2.)) == Complex(6., -1.));
+  REQUIRE((Complex(8., -1.) + Complex(4., -4.)) == Complex(12., -5.));
+
+}
+
+TEST_CASE("Tate's Catch2 tests", "[ComplexSubtraction]"){
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on subtraction" << endl;
+  //Subtraction
+  REQUIRE((Complex(1., 1.) - Complex(1., 1.)) == Complex(0., 0.));
+  REQUIRE((Complex(5., -3.) - Complex(1., 2.)) == Complex(4., -5.));
+  REQUIRE((Complex(8., -1.) - Complex(4., -4.)) == Complex(4., 3.));
+
+}
+
+TEST_CASE("Tate's Catch2 tests", "[ComplexAddition]"){
+  cout << "Hello Catch2 Build with Catch2 main()\n";
+  cout << "Running tests on addition" << endl;
+  //Addition
+  REQUIRE((Complex(1., 1.) + Complex(1., 1.)) == Complex(2., 2.));
+  REQUIRE((Complex(5., -3.) + Complex(1., 2.)) == Complex(6., -1.));
+  REQUIRE((Complex(8., -1.) + Complex(4., -4.)) == Complex(12., -5.));
+
+}
 // */
 #endif  //ifndef CATCH_AMALGAMATED_CUSTOM_MAIN
