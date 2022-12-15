@@ -66,12 +66,12 @@ TEST_CASE("Tate's Catch2 tests", "[ComplexMultiplicationDivision]"){
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on Tate's functions" << endl;
   //Multiplication
-  REQUIRE((Complex(1., 1.) * Complex(1., 1.)) == Complex(2., 0.));
+  REQUIRE((Complex(1., 1.) * Complex(1., 1.)) == Complex(0., 2.));
   REQUIRE((Complex(5., -3.) * Complex(1., 2.)) == Complex(11., 7.));
   REQUIRE((Complex(8., -1.) * Complex(4., -4.)) == Complex(28., -36.));
   //Division
   REQUIRE((Complex(1., 1.) / Complex(1., 1.)) == Complex(1., 0.));
-  REQUIRE((Complex(5., -3.) / Complex(1., 2.)) == Complex(11., 7.));
+  REQUIRE((Complex(5., -3.) / Complex(1., 2.)) == Complex((-1.0/5.0), (-13.0/5.0)));
   REQUIRE((Complex(8., -1.) / Complex(4., -4.)) == Complex((9.0/8.0), (7.0/8.0)));
 }
 
@@ -94,7 +94,7 @@ TEST_CASE("Jackson's Catch2 tests"){
   REQUIRE(arg(b) == atan(4.0/3.0));
 }
 
-TEST_CASE("Tate's Catch2 tests", "[ComplexAddition]"){
+TEST_CASE("Addition Catch2 tests", "[ComplexAddition]"){
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on addition" << endl;
   //Addition
@@ -104,7 +104,7 @@ TEST_CASE("Tate's Catch2 tests", "[ComplexAddition]"){
 
 }
 
-TEST_CASE("Tate's Catch2 tests", "[ComplexSubtraction]"){
+TEST_CASE("Subtraction Catch2 tests", "[ComplexSubtraction]"){
   cout << "Hello Catch2 Build with Catch2 main()\n";
   cout << "Running tests on subtraction" << endl;
   //Subtraction
@@ -114,13 +114,33 @@ TEST_CASE("Tate's Catch2 tests", "[ComplexSubtraction]"){
 
 }
 
-TEST_CASE("Tate's Catch2 tests", "[ComplexAddition]"){
-  cout << "Hello Catch2 Build with Catch2 main()\n";
-  cout << "Running tests on addition" << endl;
-  //Addition
-  REQUIRE((Complex(1., 1.) + Complex(1., 1.)) == Complex(2., 2.));
-  REQUIRE((Complex(5., -3.) + Complex(1., 2.)) == Complex(6., -1.));
-  REQUIRE((Complex(8., -1.) + Complex(4., -4.)) == Complex(12., -5.));
+TEST_CASE("Multiplication and Division Assignment Catch2 tests", "[ComplexMultiplicationDivisionAssignment]"){
+  Complex tempComp;
+  //Multiplication
+  tempComp = Complex(1., 1.);
+  tempComp *= Complex(1., 1.);
+  REQUIRE(tempComp == Complex(0., 2.));
+
+  tempComp = Complex(5., -3.);
+  tempComp *= Complex(1., 2.);
+  REQUIRE(tempComp == Complex(11., 7.));
+  
+  tempComp = Complex(8., -1.);
+  tempComp *= Complex(4., -4.);
+  REQUIRE(tempComp == Complex(28., -36.));
+  
+  //Division
+  tempComp = Complex(1., 1.);
+  tempComp /= Complex(1., 1.);
+  REQUIRE(tempComp == Complex(1., 0.));
+
+  tempComp = Complex(5., -3.);
+  tempComp /= Complex(1., 2.);
+  REQUIRE(tempComp == Complex((-1.0/5.0), (-13.0/5.0)));
+  
+  tempComp = Complex(8., -1.);
+  tempComp /= Complex(4., -4.);
+  REQUIRE(tempComp == Complex((9.0/8.0), (7.0/8.0)));
 
 }
 // */
