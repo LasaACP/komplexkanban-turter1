@@ -130,3 +130,57 @@ Complex log(Complex in) {
 
   return Complex(r, i);
 }
+
+//the functions that we did not implement
+
+Complex acos(Complex c){
+  return nan("");
+}
+
+Complex atan(Complex c){
+  return nan("");
+}
+
+Complex asin(Complex c){
+  return nan("");
+}
+
+Complex cosh(Complex c){
+  return nan("");
+}
+
+Complex exp(Complex c){
+  return nan("");
+}
+
+Complex log10(Complex c){
+  return nan("");
+}
+
+Complex pow(double b, Complex exp){
+  return nan("");
+}
+
+Complex pow(Complex b, int exp){
+  return nan("");
+}
+
+Complex pow(Complex b, double exp){
+  return nan("");
+}
+
+Complex pow(Complex b, Complex exp){
+  return nan("");
+}
+
+Complex sinh(Complex c){
+  return nan("");
+}
+
+Complex tan(Complex c){
+  return nan("");
+}
+
+Complex tanh(Complex c){
+  return nan("");
+}

@@ -46,6 +46,20 @@ class Complex {
     friend Complex cos(Complex ang);
     friend Complex sin(Complex num);
 
+    friend Complex acos(Complex c);
+    friend Complex atan(Complex c);
+    friend Complex asin(Complex c);
+    friend Complex cosh(Complex c);
+    friend Complex exp(Complex c);
+    friend Complex log10(Complex c);
+    friend Complex pow(double b, Complex exp);
+    friend Complex pow(Complex b, int exp);
+    friend Complex pow(Complex b, double exp);
+    friend Complex pow(Complex b, Complex exp);
+    friend Complex sinh(Complex c);
+    friend Complex tan(Complex c);
+    friend Complex tanh(Complex c);
+
     /**
      * Returns the real part of comlpex number
      * @param com The complex function to find the real part of
